@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+.inner {
+  width: 1100px;
+  margin:0 auto;
+}
+
+/* header内のアイコンの上下中央揃えはline-heightが楽。innerにpaddingとっても余白できない。ボタンとinnerは同一平面状にないのか。headerとinnerにpaddingとるとできる。 */
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  height: 95px;
+}
+
+.header_inner {
+  left: calc((100% - 1100px)/2);
+  height: 95px;
+  line-height: 95px;
+}
+
+.header__bolt-icon {
+  color: #4e4e4e;
+  margin-left: 200px;
+  top: 10px;
+}
+/* boltマークの色 */
+
+.contact-button {
+  border: none;
+  cursor: pointer;
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 12px;
+  margin-left: 600px;
+  transition: all 0.3s;
+}
+
+.contact-button:hover, .Email-button:hover {
+  color: #74cfae;
+}
+
+.main {
+  width:100%; 
+}
+
+.margin-between-header-main {
+  content: "";
+  height: 95px;
+}
+/* height暫定 */
+
+.h2 {
+  font-size: 24px;
+}
+
+.sentence {
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* global theme */
+
+.global-theme-inner {
+  background-color: #f2f2f2;
+  padding: 250px 0;
+  text-align: center;
+}
+
+.global-theme-text {
+  font-size: 90px;
+  font-weight: 700;
+  font-family: "UD デジタル 教科書体 NP-B","UD Digi Kyokasho NP-B";
+  color: #74cfae;
+  margin-bottom: 20px;
+}
+/* font種類は？ */
+
+.global-theme-text .global-theme-text_sub {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* whatwecando */
+
+.about-section {
+  background-color: #74cfae;
+  padding-top: 50px;
+} 
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* space-betweenが効かない */
+
+.about_inner__h2 {
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.about_inner__sentence {
+  color: #fff;
+  word-break: keep-all;
+}
+
+.about_inner__h2-sentence-container {
+  text-align: center;
+  width: 83%;
+}
+
+/* ourlatestwork */
+
+.work-article {
+  background-color: #f2f2f2;
+  padding: 60px 0 70px 0;
+}
+
+.work-img {
+  margin: 0 0 100px 80px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.work-img:hover {
+  opacity: 1;
+}
+
+.work-img:nth-child(1) {
+  margin-left: 0; 
+}
+
+.work-img:nth-child(4) {
+  margin: 0; 
+}
+
+.work-img:nth-child(5),
+.work-img:nth-child(6) {
+  margin: 0 0 0 80px;
+}
+
+.work_inner__h2 {
+  color: #4e4e4e;
+  margin-bottom: 40px;
+}
+
+.work-h2-img-container {
+  text-align: center;
+}
+
+.work_inner__img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 90px;
+}
+
+.work_inner__-button-sentence-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Email-button {
+  margin-left: 90px; 
+  border: none;
+  cursor: pointer;
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  line-height: 58px;  
+}
+
+/* ourskils */
+
+.skils-section {
+  background-color: #4e4e4e;
+  padding: 70px 0 100px 0;
+}
+
+.h2-circle-container {
+  text-align: center;
+}
+
+.skils_inner__h2 {
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+}
+
+.skils-container {
+  margin-left: 180px;
+}
+
+.skils-container:first-child {
+  margin-left: 0;
+}
+
+.skils-img {
+  margin-left:180px;
+}
+
+.skils-img-name {
+  font-size: 16px;
+  color: #fff;
+}
+/* before/afterで名前表示されない */
+.skils-img:first-child {
+  margin-left:0; 
+}
+
+/* nav */
+
+.sns_inner {
+  background-color: #f2f2f2;
+  padding: 200px 0; 
+}
+
+.sns-main-container {
+  display: flex; 
+  justify-content: center;
+}
+ .sns-icon { 
+  color: #74cfae;
+  transition: 0.3s;
+  width: 185px;
+  height: 150px;
+  padding: 30px 0 0 40px;
+  margin-left: 80px;
+  box-sizing: border-box;
+}
+
+.sns-icon:first-child {
+  margin-left: 0px;
+  padding-left: 65px;
+}
+
+.sns-icon:hover {
+  background-color: #fff;
+}
+
+.footer-inner {
+  background-color: #74cfae;
+  padding: 20px 0 25px 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer-sentence {
+  margin-left: 600px;
+}
