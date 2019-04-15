@@ -5,7 +5,6 @@
   margin:0 auto;
 }
 
-
 /*
 @media (max-width: 767px) {
 .inner {
@@ -38,9 +37,10 @@
 }*/
 
 .header__bolt-icon {
-  color: #4e4e4e;
-  margin-left: 200px;
+  color: #c0c0c0;
+  margin-left: 50px;
   top: 10px;
+  vertical-align: middle;
 }
 /* boltマークの色 */
 
@@ -51,31 +51,39 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
-  margin-left: 600px;
+  margin-left: 800px;
   transition: all 0.3s;
   }
 
-  /* 　sp用
+  /* sp用 */
 .sp-button {
   display: none;
 }
 
+/*
 @media (max-width: 767px) {
   .contact-button {
     display: none;
     }
 
   .sp-button {
-    border: solid 1px #f2f2f2;
-    display: block;
+    border: solid 1px #ddd;
+    color: #ddd;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    height: 34px;
+    width: 36px; 
+    line-height: 34px;
+    text-align: center;
+    margin-left: 450px;
+    }  
+  }*/
   
-  }  
-  }
-  */
   
 
 .contact-button:hover, .Email-button:hover {
-  color: #74cfae;
+  color: #333;
 }
 
 .main {
@@ -109,13 +117,12 @@
 .global-theme-text {
   font-size: 90px;
   font-weight: 700;
-  font-family: "UD デジタル 教科書体 NP-B","UD Digi Kyokasho NP-B";
   color: #74cfae;
   margin-bottom: 20px;
 }
 /* font種類は？ */
 
-.global-theme-text .global-theme-text_sub {
+.global-theme-text_sub {
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -136,7 +143,7 @@
 
 .about_inner__h2 {
   color: #fff;
-  margin-bottom: 35px;
+  margin: 25px 0 35px 0;
 }
 
 .about_inner__sentence {
@@ -157,9 +164,9 @@
 }
 
 .work-img {
-  margin: 0 0 100px 80px;
+  margin: 0 0 80px 100px;
   opacity: 0.7;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .work-img:hover {
@@ -176,7 +183,7 @@
 
 .work-img:nth-child(5),
 .work-img:nth-child(6) {
-  margin: 0 0 0 80px;
+  margin: 0 0 0 100px;
 }
 
 .work_inner__h2 {
@@ -272,14 +279,14 @@
   transition: 0.3s;
   width: 185px;
   height: 150px;
-  padding: 30px 0 0 40px;
-  margin-left: 80px;
+  padding: 45px 0 0 70px;
+  margin-left: 60px;
   box-sizing: border-box;
 }
 
 .sns-icon:first-child {
   margin-left: 0px;
-  padding-left: 65px;
+  padding-left: 75px;
 }
 
 .sns-icon:hover {
@@ -289,10 +296,10 @@
 .footer-inner {
   background-color: #74cfae;
   padding: 20px 0 25px 0;
-  font-size: 12px;
   color: #fff;
+  font-size: 8px;
 }
 
 .footer-sentence {
-  margin-left: 600px;
+  margin-left: 710px;
 }
