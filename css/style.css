@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.body-font {
+body {
   font-family: 'Lato', 'Raleway', sans-serif;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .header-inner {
-  padding: 15px 80px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +52,7 @@
   font-size: 12px;
   padding: 14px 12px;
   transition: all 0.3s;
+  text-decoration: none;
   }
 
   /* sp用 */
@@ -112,12 +113,14 @@
   font-weight: 700;
   color: #74cfae;
   margin-bottom: 20px;
+  font-family: 'Raleway';
 }
 /* font種類は？ */
 
 .global-theme-text-sub {
   font-size: 30px;
   color: #c0c0c0;
+  font-family: 'Raleway';
 }
 
 /* whatwecando */
@@ -137,6 +140,7 @@
 .about-inner-h2 {
   color: #fff;
   margin: 25px 0 35px 0;
+  font-family: 'Raleway';
 }
 
 .about-inner-sentence {
@@ -177,6 +181,7 @@
 .work-h2 {
   color: #4e4e4e;
   margin-bottom: 40px;
+  font-family: 'Raleway';
 }
 
 .work-h2-img-inner {
@@ -208,6 +213,7 @@
   font-size: 12px;
   padding: 14px 20px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* ourskils */
@@ -224,6 +230,7 @@
 .skils-inner-h2 {
   color: #fff;
   margin-bottom: 70px;
+  font-family: 'Raleway';
 }
 
 .circle-container {
@@ -282,9 +289,9 @@
   padding: 20px 0 25px 0;
   color: #fff;
   font-size: 8px;
+  text-align: right;
 }
 
 .footer-sentence {
-  margin-left: 710px;
 }
 /*  */
