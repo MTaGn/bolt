@@ -5,6 +5,14 @@
   margin:0 auto;
 }
 
+
+/*
+@media (max-width: 767px) {
+.inner {
+  width: 767px;
+  }
+}*/
+
 /* header内のアイコンの上下中央揃えはline-heightが楽。innerにpaddingとっても余白できない。ボタンとinnerは同一平面状にないのか。headerとinnerにpaddingとるとできる。 */
 
 .header {
@@ -19,6 +27,15 @@
   height: 95px;
   line-height: 95px;
 }
+
+/*
+@media (max-width: 767px) {
+.header_inner {
+  left: calc((100% - 767px)/2);
+  height: 95px;
+  line-height: 95px;
+  }
+}*/
 
 .header__bolt-icon {
   color: #4e4e4e;
@@ -36,7 +53,26 @@
   padding: 14px 12px;
   margin-left: 600px;
   transition: all 0.3s;
+  }
+
+  /* 　sp用
+.sp-button {
+  display: none;
 }
+
+@media (max-width: 767px) {
+  .contact-button {
+    display: none;
+    }
+
+  .sp-button {
+    border: solid 1px #f2f2f2;
+    display: block;
+  
+  }  
+  }
+  */
+  
 
 .contact-button:hover, .Email-button:hover {
   color: #74cfae;
