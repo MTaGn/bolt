@@ -8,93 +8,114 @@
     <meta name="description" content="This is my portfolio site.">
     <meta name="keyword" content="bolt, bootstrap, portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="body-font">
     <header class="header">
-      <div class="inner header_inner">
-          <i class="fas fa-bolt header__bolt-icon fa-3x"></i>
+      <div class="inner header-inner">
+          <i class="fas fa-bolt header-bolt-icon fa-3x"></i>
           <!--<a class="sp-button" href=""><i class="fas fa-bars fa-2x"></i></a>-->
-          <a class="contact-button">Contact</a>
+          <a class="contact-button" href="">Contact</a>
       </div>
     </header>
     <main class="main">
-      <div class="margin-between-header-main"></div>
-      <div class="global-theme-inner">
+      <div class="global-theme">
         <div class="inner">
           <h1 class="global-theme-text">Bolt Theme</h1>
-          <p class="global-theme-text_sub">FREE BOOTSTRAP THEMES</p>
+          <p class="global-theme-text-sub">FREE BOOTSTRAP THEMES</p>
       </div>
       </div>
       <section class="about-section">
         <div class="inner about-container">
           <img class="iphone-img" src="./img/iphone.png" alt="iphone-img">
-          <div class="about_inner__h2-sentence-container">
-            <h2 class="h2 about_inner__h2">WHAT WE CAN DO</h2>
-            <p class="sentence about_inner__sentence">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <div class="about-inner-h2-sentence-container">
+            <h2 class="h2 about-inner-h2">WHAT WE CAN DO</h2>
+            <p class="sentence about-inner-sentence">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
       </section>
       <article class="work-article">
-        <div class="inner work-h2-img-container">
-          <h2 class="h2 work_inner__h2">WHAT OUR LATEST WORK</h2>
-          <figure class="work_inner__img-container">
+        <div class="inner work-h2-img-inner">
+          <h2 class="h2 work-h2">WHAT OUR LATEST WORK</h2>
+          <div class="work-img-container">
             <a class="work-img" href=""><img src="./img/01.jpg" alt="multiple-iphone"></a>
             <a class="work-img" href=""><img src="./img/02.jpg" alt="robot-overviwe"></a>
             <a class="work-img" href=""><img src="./img/03.jpg" alt="symbol"></a>
             <a class="work-img" href=""><img src="./img/04.jpg" alt="multiple-symbol"></a>
             <a class="work-img" href=""><img src="./img/05.jpg" alt="robot-at-bottom"></a>
             <a class="work-img" href=""><img src="./img/06.jpg" alt="robot-head"></a>
-          </figure>
-          <div class="work_inner__-button-sentence-container">
-            <p class="sentence">Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been the industry's standard dummy<br> text ever.</p>
-            <a class="Email-button">Email Me!</a>
+          </div>
+          <div class="work-inner-button-sentence-container">
+            <p class="sentence work-sentence">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <a class="email-button" href="">Email Me!</a>
           </div>
         </div>
       </article>
       <section class="skils-section">
         <div class="inner h2-circle-container">
-          <h2 class="h2 skils_inner__h2">OUR SKILS</h2>
+          <h2 class="h2 skils-inner-h2">OUR SKILS</h2>
             <div class="circle-container">
               <figure class="skils-container">
                 <img class="skils-img" src="./img/circle_01.png" alt="our-skil-circle">
-                <figcaption class="skils-img-name">JavaScript</figcaption>
+                <p class="skils-img-name">JavaScript</p>
               </figure>
-              <figure class="skils-container">
+              <div class="skils-container">
                 <img class="skils-img bootstrap" src="./img/circle_02.png" alt="our-skils-circle">
-                <figcaption class="skils-img-name">Bootstrap</figcaption>
-              </figure>
-              <figure class="skils-container">
+                <p class="skils-img-name">Bootstrap</p>
+              </div>
+              <div class="skils-container">
                 <img class="skils-img" src="./img/circle_03.png" alt="our-skils-circle">
-                <figcaption class="skils-img-name">WordPress</figcaption>
-              </figure>
-              <figure class="skils-container">
+                <p class="skils-img-name">WordPress</p>
+              </div>
+              <div class="skils-container">
                 <img class="skils-img" src="./img/circle_04.png" alt="our-skils-circle">
-                <figcaption class="skils-img-name">Photoshop</figcaption>
-              </figure>
+                <p class="skils-img-name">Photoshop</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <nav class="sns_inner">
+      <nav class="sns-inner">
         <div class="inner sns-main-container">
-          <a class="sns-icon"><i class="fab fa-facebook-f fa-4x"></i></a>
-          <a class="sns-icon"><i class="fas fa-basketball-ball fa-4x"></i></a>
-          <a class="sns-icon"><i class="fab fa-twitter fa-4x"></i></a>
-          <a class="sns-icon"><i class="fas fa-envelope fa-4x"></i></a>
+          <a class="sns-icon" href=""><i class="fab fa-facebook-f fa-4x"></i></a>
+          <a class="sns-icon" href=""><i class="fas fa-basketball-ball fa-4x"></i></a>
+          <a class="sns-icon" href=""><i class="fab fa-twitter fa-4x"></i></a>
+          <a class="sns-icon" href=""><i class="fas fa-envelope fa-4x"></i></a>
         </div>
       </nav>
     </main>
     <footer class=" footer">
-      <div class="footer-inner">
-        <div class="inner">
-          <p class="footer-sentence">Crafted with &hearts; by BlackTie.com</p>
-      </div>
+      <div class="inner">
+        <p class="footer-sentence">Crafted with &hearts; by BlackTie.com</p>
       </div>
     </footer>
   </body>
 </html>
+<!-- review
+headerの高さ不要
+header innerの高さ不要
+headのcalc関数不要
+bolticonのmargin-leftいらない
+iconのtop10px
+contactボタンのmargin-left, cursor, border-none
+cursorなくてもhrefあったらつく
+横並びflex等で
+headerとmainの重なりはpaddingで。divタグけしとく
+テキストと画像の間をあける
+画像をfigureからdivタグに本文からとっても影響ないものはfigure。
+画像とheaderが重なっているzindex使用
+nth-chidlの数字を変数に。追加しても同じレイアウトになるように。
+ボタンタグ横のテキストはbr使わない。その要素幅でレイアウト崩れる。幅を決めて
+倍率は100%で。ボタンが伸びてるからパーツ7を参考に
+ボタンのaタグにhrefつけて、cursorけす
+snsのaタグhrefつける。margin-leftいらん。heightいらん。paddingで中央寄せしない。普通高さ指定ない。paddingで高さを付ける。アイコンはテキストあラインで。 
+footerもtext-alignで調整。footer、footerinner一緒に。
+追加のstylesheetはreset.cssより上に入れない-
+フォントの指定がされていない。ファイルは読み込まれている。
+クラス命名方法がばらばら。最初はブロック、エレメントとか意識しなくて良い。
+頭文字が大文字のを小文字にクラス名？
+innerでないのにinnerとつけている。innerとcontainerの使い方がばらばら？
+-->
