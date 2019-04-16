@@ -29,7 +29,7 @@
       </div>
       </div>
       <section class="about-section">
-        <div class="inner about-inner">
+        <div class="inner about-container">
           <img class="iphone-img" src="./img/iphone.png" alt="iphone-img">
           <div class="about-inner-h2-sentence-container">
             <h2 class="h2 about-inner-h2">WHAT WE CAN DO?</h2>
@@ -58,10 +58,10 @@
         <div class="inner h2-circle-container">
           <h2 class="h2 skils-inner-h2">OUR SKILS</h2>
             <div class="circle-container">
-              <figure class="skils-container">
+              <div class="skils-container">
                 <img class="skils-img" src="./img/circle_01.png" alt="our-skil-circle">
                 <p class="skils-img-name">JavaScript</p>
-              </figure>
+              </div>
               <div class="skils-container">
                 <img class="skils-img bootstrap" src="./img/circle_02.png" alt="our-skils-circle">
                 <p class="skils-img-name">Bootstrap</p>
@@ -94,7 +94,7 @@
     </footer>
   </body>
 </html>
-<!-- review
+<!-- pc review
 headerの高さ不要
 header innerの高さ不要
 headのcalc関数不要
@@ -120,11 +120,24 @@ footerもtext-alignで調整。footer、footerinner一緒に。
 innerでないのにinnerとつけている。innerとcontainerの使い方がばらばら？
 -->
 
-<!-- review2 
+<!-- pc review2 
 buttonのアンダーバー
 headerの横paddingいらない。ほかのエリアが使ってないように
 footerの位置marginいらん
 フォントひとつしか使ってない(themeとか)
 calc関数意味なかった？-->
 
-<!--  -->
+<!-- review sp, tab 
+1.他ページを作成した後は他ブレイクポイントページが崩れる可能性がある
+pcページ画像、テキスト横並び崩れてる
+6.pc tab spの順に記述。幅が狭くなる順に
+3.pc tab sp　what we can doの画像とh2 ｈ２とテキストでmarginとる
+aタグの余白が画像はみだす。max-widthをaタグにつける。
+1.画像間の余白。vetical-align。ブラウザの仕様。imgのhtmlタグにスタイルを当てるので一番上に書いて、上書きできるように。
+4.figureタグ使っていた。
+5.snsの幅はレスポンシブでは%で。２５%。pcはなんで固定幅でよい？
+
+
+sp
+
+-->

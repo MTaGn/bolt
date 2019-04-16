@@ -4,6 +4,10 @@ body {
   font-family: 'Lato', 'Raleway', sans-serif;
 }
 
+img {
+  vertical-align: bottom;
+}
+
  .inner { 
   width: 1100px;
   margin:0 auto;
@@ -105,7 +109,7 @@ body {
 
 .about-inner-h2 {
   color: #fff;
-  margin: 25px 0 35px 0;
+  margin: 0 0 35px 0;
 }
 
 .about-inner-sentence {
@@ -116,6 +120,7 @@ body {
 .about-inner-h2-sentence-container {
   text-align: center;
   width: 62%;
+  padding-top: 25px;
 }
 
 /* ourlatestwork */
@@ -129,9 +134,10 @@ body {
   margin: 0 0 80px 100px;
   opacity: 0.7;
   transition: all 0.3s;
+  max-width: 300px; 
 }
 
-.work-img:hover {
+.work-img:active {
   opacity: 1;
 }
 
@@ -253,118 +259,7 @@ body {
   color: #fff;
   font-size: 8px;
   text-align: right;
-}
-
-@media screen and (max-width: 767px) { 
-  .inner {
-    width: 97%; 
-    }
-
-  .contact-button {
-    display: none;
-    }
-  
-  .sp-button {
-    border: solid 1px #ddd;
-    color: #ddd;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-    }
-      
-    .global-theme {
-      padding: 160px 0 130px 0;
-    }
-      
-    .global-theme-text {
-      font-size: 80px;
-      margin-bottom: 20px;
-    }
-      
-    .about-inner-h2-sentence-container {
-      text-align: center;
-      width: 82%;
-      margin:0 auto;
-    }
-
-    .about-section {
-      padding: 50px 0 25px 0;
-      text-align: center;
-    }
-
-    .about-inner-h2 {
-      margin-top: 20px;
-    }
-
-    .work-img-container {
-      justify-content: center;
-    }
-      
-    .work-img {
-      margin: 0;
-    }
-      
-    .work-img:nth-child(4n) {
-      margin-top: 80px;
-    }
-
-    .work-img:active {
-      opacity: 1;
-    }
-
-    .work-inner-button-sentence-container {
-      display: block;
-    }
-
-    .work-sentence {
-      margin: 0 auto; 
-      width: 90%;
-    }
-
-    .email-button {
-      margin:40px 0 0 0;
-      display: inline-block;
-    }
-
-    .email-button:active {
-      color: #333;
-    }
-
-    .circle-container {
-      display: block;
-    }
-
-    .skils-container {
-      margin: 88px 0 0 0;
-    }
-
-    .skils-container:first-child {
-      margin: 0px;
-    }
-
-    .sns-main-container {
-      display: block;
-    }
-
-    .sns-icon {
-      display: block;
-      margin: 0 auto; 
-      width: 100%;
-    }
-
-    .sns-icon:active {
-      background-color: #fff;
-    }
-
-    .sns-inner {
-      padding: 50px 0;
-    }
-
-    .footer-sentence {
-      font-size: 12px;
-    }
-  }
+} 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .inner {
@@ -386,19 +281,45 @@ body {
       text-align: center;
     }
 
+    .about-container {
+      display: block;
+    }
+
     .about-inner-h2 {
-      margin-top: 20px;
+      margin-top: 0 0 35px 0;
     }
 
     .about-inner-h2-sentence-container {
       text-align: center;
       width: 84%;
       margin:0 auto;
+      padding: 0;
+    }
+
+    .iphone-img {
+      margin-bottom: 20px;
     }
 
     .work-img-container {
       display: block;
     } 
+
+    .work-img:nth-child(3n) {
+      margin-bottom: 80px; 
+    }
+
+    .work-img:last-child {
+      margin-bottom: 0; 
+    }
+
+/* pcページのレイアウトスタイルを解除するためautoに */
+    .work-img:nth-child(3n+1) {
+      margin-left: auto; 
+    }
+    
+    .work-img:nth-last-child(-n+3) {
+      margin-bottom: auto;
+    }
 
     .work-img {
       display: block;
@@ -407,10 +328,6 @@ body {
 
     .work-img:active {
       opacity: 1;
-    }
-    
-    .work-img:nth-child(4n) {
-      margin-top: 80px;
     }
 
     .work-inner-button-sentence-container {
@@ -443,9 +360,142 @@ body {
       margin: 0px;
     }
 
+    .sns-icon {
+      width: 25%;
+    }
+
     .sns-icon:active {
       background-color: #fff;
     }
   }
+
+  @media screen and (max-width: 767px) { 
+    .inner {
+      width: 97%; 
+      }
+  
+    .contact-button {
+      display: none;
+      }
+    
+    .sp-button {
+      border: solid 1px #ddd;
+      color: #ddd;
+      display: inline-block;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+      }
+        
+      .global-theme {
+        padding: 160px 0 130px 0;
+      }
+        
+      .global-theme-text {
+        font-size: 80px;
+        margin-bottom: 20px;
+      }
+      
+      .iphone-img {
+        margin-bottom: 20px;
+      }
+      
+  
+      .about-inner-h2-sentence-container {
+        text-align: center;
+        width: 82%;
+        margin:0 auto;
+        padding: 0;
+      }
+  
+      .about-section {
+        padding: 50px 0 25px 0;
+        text-align: center;
+      }
+  
+      .about-container {
+        display: block;
+      }
+  
+      .about-inner-h2 {
+        margin: 0 0 35px 0;
+      } 
+  
+      .work-img-container {
+        justify-content: center;
+      }
+        
+      .work-img {
+        margin: 0;
+        max-width: 300px;
+      }
+      
+      
+      .work-img:nth-child(3n) {
+        margin-bottom: 80px; 
+      }
+  
+      .work-img:last-child {
+        margin-bottom: 0; 
+      }
+  
+      .work-img:active {
+        opacity: 1;
+      }
+  
+      .work-inner-button-sentence-container {
+        display: block;
+      }
+  
+      .work-sentence {
+        margin: 0 auto; 
+        width: 90%;
+      }
+  
+      .email-button {
+        margin:40px 0 0 0;
+        display: inline-block;
+      }
+  
+      .email-button:active {
+        color: #333;
+      }
+  
+      .circle-container {
+        display: block;
+      }
+  
+      .skils-container {
+        margin: 88px 0 0 0;
+      }
+  
+      .skils-container:first-child {
+        margin: 0px;
+      }
+  
+      .sns-main-container {
+        display: block;
+      }
+  
+      .sns-icon {
+        display: block;
+        margin: 0 auto; 
+        width: 100%;
+      }
+  
+      .sns-icon:active {
+        background-color: #fff;
+      }
+  
+      .sns-inner {
+        padding: 50px 0;
+      }
+  
+      .footer-sentence {
+        font-size: 12px;
+      }
+    }
+  
+  
 
 /* ディベロッパーツールをresponsiveにすると横幅が若干動くときがある */  
