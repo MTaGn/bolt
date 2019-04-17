@@ -137,7 +137,7 @@ img {
   max-width: 300px; 
 }
 
-.work-img:active {
+.work-img:hover {
   opacity: 1;
 }
 
@@ -266,10 +266,6 @@ img {
     width: 97%; 
     }
 
-    .contact-button:active, .email-button:active {
-      color: #333;
-    }
-
     .about-inner-h2-sentence-container {
       text-align: center;
       width: 82%;
@@ -326,10 +322,6 @@ img {
       margin: 0 auto;
     }
 
-    .work-img:active {
-      opacity: 1;
-    }
-
     .work-inner-button-sentence-container {
       display: block;
     }
@@ -362,10 +354,6 @@ img {
 
     .sns-icon {
       width: 25%;
-    }
-
-    .sns-icon:active {
-      background-color: #fff;
     }
   }
 
@@ -439,10 +427,6 @@ img {
         margin-bottom: 0; 
       }
   
-      .work-img:active {
-        opacity: 1;
-      }
-  
       .work-inner-button-sentence-container {
         display: block;
       }
@@ -455,10 +439,6 @@ img {
       .email-button {
         margin:40px 0 0 0;
         display: inline-block;
-      }
-  
-      .email-button:active {
-        color: #333;
       }
   
       .circle-container {
@@ -483,10 +463,6 @@ img {
         width: 100%;
       }
   
-      .sns-icon:active {
-        background-color: #fff;
-      }
-  
       .sns-inner {
         padding: 50px 0;
       }
@@ -497,5 +473,4 @@ img {
     }
   
   
-
-/* ディベロッパーツールをresponsiveにすると横幅が若干動くときがある */  
+  
